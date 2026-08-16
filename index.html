@@ -1,413 +1,450 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="عبد الحفيظ النعاس - خدمة توصيل سريعة واحترافية من مطعم المرجان ومطعم جباليا في تاجوراء" />
-  <title>عبد الحفيظ النعاس | توصيل المرجان وجباليا - تاجوراء</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عبد الحفيظ النعاس | خدمة توصيل الطلبات في تاجوراء</title>
+    <!-- Google Fonts: Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- خلفية متحركة -->
-  <div class="bg-grid"></div>
-  <div class="bg-glow glow-1"></div>
-  <div class="bg-glow glow-2"></div>
-  <div class="bg-glow glow-3"></div>
 
-  <!-- شريط التنقل -->
-  <header class="header" id="header">
-    <nav class="nav container">
-      <a href="#home" class="logo">
-        <span class="logo-mark"><i class="fa-solid fa-motorcycle"></i></span>
-        <span class="logo-text">عبد الحفيظ النعاس</span>
-      </a>
-
-      <button class="nav-toggle" id="navToggle" aria-label="القائمة">
-        <span></span><span></span><span></span>
-      </button>
-
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="#home" class="nav-link active">الرئيسية</a></li>
-        <li><a href="#about" class="nav-link">من أنا</a></li>
-        <li><a href="#services" class="nav-link">الخدمات</a></li>
-        <li><a href="#restaurants" class="nav-link">المطاعم</a></li>
-        <li><a href="https://wa.me/218944752936" class="nav-link nav-cta">تواصل الآن</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <!-- ===== البطل ===== -->
-    <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div class="hero-content" data-reveal>
-          <div class="badge">
-            <i class="fa-solid fa-bolt"></i>
-            توصيل سريع · دراجة نارية · تاجوراء
-          </div>
-          <h1>
-            مرحباً، أنا <span class="gradient-text">عبد الحفيظ النعاس</span>
-          </h1>
-          <p class="hero-sub">
-            مندوب توصيل محترف يعمل مع
-            <strong>مطعم المرجان</strong> و
-            <strong>مطعم جباليا</strong> في تاجوراء.
-            سرعة، أمان، واحترافية في كل رحلة.
-          </p>
-          <div class="hero-actions">
-            <a href="https://wa.me/218944752936" class="btn btn-primary" target="_blank" rel="noopener">
-              <i class="fa-brands fa-whatsapp"></i>
-              اطلب توصيل الآن
+    <!-- Header / Navbar -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="#home" class="logo nav-link-btn" data-page="home">
+                <div class="logo-icon"><i class="fa-solid fa-motorcycle"></i></div>
+                <div class="logo-text">
+                    <span class="logo-title">عبد الحفيظ النعاس</span>
+                    <span class="logo-subtitle">خدمة توصيل سريع - تاجوراء</span>
+                </div>
             </a>
-            <a href="#services" class="btn btn-ghost">
-              <i class="fa-solid fa-arrow-down"></i>
-              اكتشف الخدمات
+
+            <nav class="desktop-nav">
+                <a href="#home" class="nav-link active" data-page="home">الرئيسية</a>
+                <a href="#about" class="nav-link" data-page="about">من أنا</a>
+                <a href="#services" class="nav-link" data-page="services">الخدمات</a>
+                <a href="#coverage" class="nav-link" data-page="coverage">التغطية وأوقات العمل</a>
+                <a href="#contact" class="nav-link" data-page="contact">تواصل معي</a>
+            </nav>
+
+            <a href="https://wa.me/218944752936" target="_blank" class="header-cta-btn">
+                <i class="fa-brands fa-whatsapp"></i> اطلب الآن
             </a>
-          </div>
-          <div class="hero-stats">
-            <div class="stat">
-              <span class="stat-num" data-count="1200">0</span>+
-              <span class="stat-label">طلب مكتمل</span>
-            </div>
-            <div class="stat">
-              <span class="stat-num" data-count="15">0</span> دقيقة
-              <span class="stat-label">متوسط الوصول</span>
-            </div>
-            <div class="stat">
-              <span class="stat-num" data-count="100">0</span>%
-              <span class="stat-label">رضا العملاء</span>
-            </div>
-          </div>
+
+            <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="فتح القائمة">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
+    </header>
 
-        <div class="hero-visual" data-reveal>
-          <div class="visual-card">
-            <div class="visual-ring"></div>
-            <div class="visual-ring ring-2"></div>
-            <img
-              src="abdo.jpg"
-              alt="دراجة نارية للتوصيل"
-              class="hero-img"
-            />
-            <div class="floating-chip chip-1">
-              <i class="fa-solid fa-motorcycle"></i>
-              توصيل بالدراجة
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-overlay" id="mobileOverlay"></div>
+    <aside class="mobile-nav-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+            <div class="logo-text">
+                <span class="logo-title">عبد الحفيظ النعاس</span>
+                <span class="logo-subtitle">توصيل طلبات - تاجوراء</span>
             </div>
-            <div class="floating-chip chip-2">
-              <i class="fa-solid fa-location-dot"></i>
-              تاجوراء
-            </div>
-            <div class="floating-chip chip-3">
-              <i class="fa-solid fa-utensils"></i>
-              المرجان · جباليا
-            </div>
-          </div>
+            <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="إغلاق القائمة">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
         </div>
-      </div>
-      <div class="scroll-hint"><span></span></div>
-    </section>
-
-    <!-- ===== من أنا ===== -->
-    <section class="section about" id="about">
-      <div class="container">
-        <div class="section-head" data-reveal>
-          <span class="section-tag">التعريف</span>
-          <h2>من هو <span class="gradient-text">عبد الحفيظ النعاس</span>؟</h2>
-          <p>خدمة توصيل شخصية موثوقة لمطعمي المرجان وجباليا في تاجوراء.</p>
+        <div class="drawer-body">
+            <a href="#home" class="drawer-link active" data-page="home"><i class="fa-solid fa-house"></i> الرئيسية</a>
+            <a href="#about" class="drawer-link" data-page="about"><i class="fa-solid fa-user-check"></i> من أنا</a>
+            <a href="#services" class="drawer-link" data-page="services"><i class="fa-solid fa-boxes-packing"></i> الخدمات</a>
+            <a href="#coverage" class="drawer-link" data-page="coverage"><i class="fa-solid fa-map-location-dot"></i> التغطية والأوقات</a>
+            <a href="#contact" class="drawer-link" data-page="contact"><i class="fa-solid fa-headset"></i> تواصل معي</a>
         </div>
-
-        <div class="about-grid">
-          <div class="about-image" data-reveal>
-            <div class="img-frame">
-              <img
-                src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&fit=crop&w=800&q=80"
-                alt="توصيل طعام احترافي"
-              />
-              <div class="img-badge">
-                <i class="fa-solid fa-shield-halved"></i>
-                معتمد · موثوق
-              </div>
-            </div>
-          </div>
-
-          <div class="about-content" data-reveal>
-            <h3>احترافية التوصيل تبدأ من الالتزام</h3>
-            <p>
-              أعمل كمندوب توصيل على دراجة نارية مع
-              <strong>مطعم المرجان</strong> و
-              <strong>مطعم جباليا</strong> في منطقة
-              <strong>تاجوراء</strong>. هدفي أن يصل طلبك ساخناً، سالماً، وفي أسرع وقت ممكن.
-            </p>
-            <ul class="feature-list">
-              <li><i class="fa-solid fa-check"></i> توصيل من مطعمي المرجان وجباليا</li>
-              <li><i class="fa-solid fa-check"></i> دراجة نارية لسرعة الوصول داخل تاجوراء</li>
-              <li><i class="fa-solid fa-check"></i> تعامل راقٍ ومتابعة مستمرة للطلب</li>
-              <li><i class="fa-solid fa-check"></i> التزام بالمواعيد والعناية بالطلبات</li>
-            </ul>
-            <div class="about-meta">
-              <div>
-                <span>الاسم</span>
-                <strong>عبد الحفيظ النعاس</strong>
-              </div>
-              <div>
-                <span>المنطقة</span>
-                <strong>تاجوراء</strong>
-              </div>
-              <div>
-                <span>المطاعم</span>
-                <strong>المرجان · جباليا</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- الخدمات -->
-    <section class="section services" id="services">
-      <div class="container">
-        <div class="section-head" data-reveal>
-          <span class="section-tag">الخدمات</span>
-          <h2>ماذا <span class="gradient-text">أقدم</span> لك؟</h2>
-          <p>خدمات توصيل مصممة لتجربة طعام سلسة وسريعة من مطعمي المرجان وجباليا.</p>
-        </div>
-
-        <div class="services-grid">
-          <div class="service-card" data-reveal>
-            <div class="service-icon"><i class="fa-solid fa-bolt"></i></div>
-            <h3>توصيل فوري</h3>
-            <p>أسرع توصيل داخل تاجوراء. اطلب واحصل على طلبك في أقل من 15 دقيقة.</p>
-          </div>
-
-          <div class="service-card" data-reveal>
-            <div class="service-icon"><i class="fa-solid fa-clock"></i></div>
-            <h3>توصيل مجدول</h3>
-            <p>حدد وقت التوصيل المناسب لك وكن متأكداً أن طلبك سيصل في الموعد بالضبط.</p>
-          </div>
-
-          <div class="service-card" data-reveal>
-            <div class="service-icon"><i class="fa-solid fa-box"></i></div>
-            <h3>طلبات كبيرة</h3>
-            <p>حفلات أو عزائم؟ أتعامل مع الطلبات الكبيرة بكل احترافية ودقة.</p>
-          </div>
-
-          <div class="service-card" data-reveal>
-            <div class="service-icon"><i class="fa-solid fa-motorcycle"></i></div>
-            <h3>سرعة التوصيل</h3>
-            <p>دراجة نارية حديثة تمكنني من التنقل بسرعة وسط زحام تاجوراء.</p>
-          </div>
-
-          <div class="service-card" data-reveal>
-            <div class="service-icon"><i class="fa-solid fa-shield"></i></div>
-            <h3>أمان الطلب</h3>
-            <p>حقيبة حرارية محكمة الإغلاق تحافظ على درجة حرارة طعامك حتى الوصول.</p>
-          </div>
-
-          <div class="service-card" data-reveal>
-            <div class="service-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
-            <h3>خدمة مميزة</h3>
-            <p>تعامل راقي وابتسامة دائمة لأن راحتك هي أولويتي الأولى.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- المطاعم وأوقات العمل -->
-    <section class="section restaurants" id="restaurants">
-      <div class="container">
-        <div class="section-head" data-reveal>
-          <span class="section-tag">أماكن العمل</span>
-          <h2>المطاعم و<span class="gradient-text">أوقات التوصيل</span></h2>
-          <p>أعمل حالياً مع مطعمين في تاجوراء — اختر المطعم واطلع على أوقات العمل.</p>
-        </div>
-
-        <div class="restaurants-grid">
-          <!-- مطعم المرجان -->
-          <div class="restaurant-card" data-reveal>
-            <div class="rest-top">
-              <div class="rest-icon coral">
-                <i class="fa-solid fa-utensils"></i>
-              </div>
-              <div class="rest-badge">تاجوراء</div>
-            </div>
-            <h3>مطعم المرجان</h3>
-            <p class="rest-desc">توصيل يومي من مطعم المرجان في تاجوراء خلال الفترة المسائية.</p>
-
-            <div class="rest-hours">
-              <div class="hours-head">
-                <i class="fa-solid fa-clock"></i>
-                <span>أوقات التوصيل</span>
-              </div>
-              <div class="hours-row">
-                <span class="hours-label">من أذان المغرب</span>
-                <span class="hours-time">حتى 12:00 ليلاً</span>
-              </div>
-            </div>
-
-            <ul class="rest-features">
-              <li><i class="fa-solid fa-check"></i> توصيل بالدراجة النارية</li>
-              <li><i class="fa-solid fa-check"></i> تغطية تاجوراء بالكامل</li>
-              <li><i class="fa-solid fa-check"></i> خدمة مسائية يومية</li>
-            </ul>
-
-            <a href="https://wa.me/218944752936?text=مرحباً، أريد طلب توصيل من مطعم المرجان" class="btn btn-primary rest-btn" target="_blank" rel="noopener">
-              <i class="fa-brands fa-whatsapp"></i>
-              اطلب من المرجان
+        <div class="drawer-footer">
+            <a href="https://wa.me/218944752936" target="_blank" class="btn btn-whatsapp w-full">
+                <i class="fa-brands fa-whatsapp"></i> واتساب مباشر
             </a>
-          </div>
+        </div>
+    </aside>
 
-          <!-- مطعم جباليا -->
-          <div class="restaurant-card" data-reveal>
-            <div class="rest-top">
-              <div class="rest-icon cyan">
-                <i class="fa-solid fa-mountain-sun"></i>
-              </div>
-              <div class="rest-badge">تاجوراء</div>
+    <!-- Main Content Pages Container (SPA) -->
+    <main class="main-content">
+
+        <!-- PAGE 1: HOME -->
+        <section id="home-page" class="page-section active">
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <div class="container hero-container">
+                    <div class="hero-text-content">
+                        <div class="hero-badge">
+                            <i class="fa-solid fa-bolt"></i> مندوب التوصيل الأسرع في تاجوراء
+                        </div>
+                        <h1 class="hero-title">
+                            وصل طلبك سخن وساخن في أسرع وقت مع <span class="highlight">عبد الحفيظ النعاس</span>
+                        </h1>
+                        <p class="hero-description">
+                            خدمة توصيل طلبات المطاعم والمشاوير والطرود الشخصية بكل أمان وسرعة عبر الدراجة النارية داخل كافة مناطق وأحياء مدينة تاجوراء.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="https://wa.me/218944752936" target="_blank" class="btn btn-primary">
+                                <i class="fa-brands fa-whatsapp"></i> اطلب عبر واتساب
+                            </a>
+                            <button class="btn btn-outline nav-link-btn" data-page="services">
+                                <i class="fa-solid fa-list-check"></i> تعرف على الخدمات
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="hero-image-wrapper">
+                        <div class="hero-card-image">
+                            <img src="abdo.jpg" alt="عبد الحفيظ النعاس - مندوب توصيل تاجوراء">
+                            <!-- Floating badges -->
+                            <div class="floating-badge badge-1">
+                                <i class="fa-solid fa-motorcycle"></i>
+                                <span>دراجة نارية سريعة</span>
+                            </div>
+                            <div class="floating-badge badge-2">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span>عناية بالغة بالطلب</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <h3>مطعم جباليا</h3>
-            <p class="rest-desc">توصيل من مطعم جباليا على فترتين يومياً في تاجوراء.</p>
 
-            <div class="rest-hours">
-              <div class="hours-head">
-                <i class="fa-solid fa-clock"></i>
-                <span>أوقات التوصيل</span>
-              </div>
-              <div class="hours-row">
-                <span class="hours-label">الفترة الأولى</span>
-                <span class="hours-time">1:00 ظهراً — 6:00 مساءً</span>
-              </div>
-              <div class="hours-row">
-                <span class="hours-label">الفترة الثانية</span>
-                <span class="hours-time">8:00 مساءً — 12:30 ليلاً</span>
-              </div>
+            <!-- Stats Bar -->
+            <div class="stats-bar-section">
+                <div class="container">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-stopwatch"></i></div>
+                            <div class="stat-info">
+                                <div class="stat-number"><span class="counter" data-target="15">0</span> دقيقة</div>
+                                <div class="stat-label">متوسط وقت الوصول</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-face-smile"></i></div>
+                            <div class="stat-info">
+                                <div class="stat-number"><span class="counter" data-target="100">0</span>%</div>
+                                <div class="stat-label">رضا العملاء</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-clock"></i></div>
+                            <div class="stat-info">
+                                <div class="stat-number">24 / 7</div>
+                                <div class="stat-label">جاهزية واستجابة فورية</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <ul class="rest-features">
-              <li><i class="fa-solid fa-check"></i> توصيل بالدراجة النارية</li>
-              <li><i class="fa-solid fa-check"></i> فترتان يومياً</li>
-              <li><i class="fa-solid fa-check"></i> تغطية تاجوراء بالكامل</li>
-            </ul>
+            <!-- Highlights / Features Section -->
+            <div class="section-padding bg-light">
+                <div class="container">
+                    <div class="section-title-wrapper">
+                        <h2 class="section-title">لماذا تختار خدمتي للتوصيل؟</h2>
+                        <p class="section-subtitle">أقدم لك أفضل وأسرع تجربة توصيل طعام ومشاوير داخل تاجوراء مع ضمان السلامة والجودة.</p>
+                    </div>
 
-            <a href="https://wa.me/218944752936?text=مرحباً، أريد طلب توصيل من مطعم جباليا" class="btn btn-primary rest-btn" target="_blank" rel="noopener">
-              <i class="fa-brands fa-whatsapp"></i>
-              اطلب من جباليا
-            </a>
-          </div>
-        </div>
-
-        <!-- بطاقة التغطية -->
-        <div class="coverage-note" data-reveal>
-          <div class="note-item">
-            <i class="fa-solid fa-location-dot"></i>
-            <div>
-              <strong>تاجوراء بالكامل</strong>
-              <span>جميع الشوارع والمناطق السكنية</span>
+                    <div class="grid-3">
+                        <div class="feature-card reveal">
+                            <div class="feature-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                            <h3>وصول سريع ودقيق</h3>
+                            <p>أدرك تماماً أهمية الوقت وسرعة توصيل الطعام وهو دافئ وطازج من المطعم إلى باب بيتك.</p>
+                        </div>
+                        <div class="feature-card reveal">
+                            <div class="feature-icon"><i class="fa-solid fa-box-tissue"></i></div>
+                            <h3>عناية كاملة بالطلب</h3>
+                            <p>نقل آمن وتغليف دقيق يضمن عدم تلف أو انسحاب أي جزء من وجبتك أثناء الطريق.</p>
+                        </div>
+                        <div class="feature-card reveal">
+                            <div class="feature-icon"><i class="fa-solid fa-comments"></i></div>
+                            <h3>تواصل فوري ومباشر</h3>
+                            <p>تواصل مباشر معي عبر الهاتف أو الواتساب لمتابعة طلبك خطوة بخطوة حتى لحظة الاستلام.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="note-item">
-            <i class="fa-solid fa-motorcycle"></i>
-            <div>
-              <strong>توصيل بالدراجة</strong>
-              <span>سرعة ومرونة في الوصول</span>
+
+            <!-- Call to Action Banner -->
+            <div class="cta-banner">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2>هل لديك طلب من مطعمك المفضل أو مشوار داخل تاجوراء؟</h2>
+                        <p>لا تتعب نفسك بالخروج! تواصل معي الآن وسأقوم بتجهيز وتوصيل طلبك بأقصى سرعة.</p>
+                        <a href="https://wa.me/218944752936" target="_blank" class="btn btn-whatsapp-large">
+                            <i class="fa-brands fa-whatsapp"></i> أرسل طلبك الآن عبر واتساب
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="note-item">
-            <i class="fa-solid fa-store"></i>
-            <div>
-              <strong>مطعمان فقط</strong>
-              <span>المرجان · جباليا</span>
+        </section>
+
+        <!-- PAGE 2: ABOUT -->
+        <section id="about-page" class="page-section">
+            <div class="page-header">
+                <div class="container">
+                    <h1>من أنا</h1>
+                    <p>تعرف على عبد الحفيظ النعاس - شريكك الموثوق لتوصيل الطلبات في تاجوراء</p>
+                </div>
             </div>
-          </div>
+
+            <div class="section-padding">
+                <div class="container">
+                    <div class="about-grid">
+                        <div class="about-image-column reveal">
+                            <div class="about-img-box">
+                                <img src="abdo.jpg" alt="عبد الحفيظ النعاس">
+                                <div class="trusted-badge">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span>مندوب موثوق ومعتمد</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-text-column reveal">
+                            <span class="sub-heading">التزام وسرعة في الأداء</span>
+                            <h2>عبد الحفيظ النعاس – مندوب توصيل بالدراجة النارية</h2>
+                            <p class="lead-text">
+                                أعمل كمندوب توصيل مستقل في مدينة تاجوراء - ليبيا، متكفلاً لنفسي بتقديم أعلى مستوى من الكفاءة والسرعة في إيصال طلباتكم.
+                            </p>
+                            <p>
+                                أعتمد على الدراجة النارية للتنقل السلس والسريع وتفادي الازحامات المرورية، مما يضمن وصول وجبتك أو طردك في وقت قياسي وبأعلى معايير الأمان والسلامة.
+                            </p>
+
+                            <div class="about-features-list">
+                                <div class="about-feature-item">
+                                    <div class="item-icon"><i class="fa-solid fa-handshake"></i></div>
+                                    <div class="item-text">
+                                        <h4>تعامل راقٍ واحترام</h4>
+                                        <p>حرص كامل على اللباقة والتعامل الطيب مع كافة الزبائن والمحلات.</p>
+                                    </div>
+                                </div>
+                                <div class="about-feature-item">
+                                    <div class="item-icon"><i class="fa-solid fa-route"></i></div>
+                                    <div class="item-text">
+                                        <h4>متابعة مستمرة للطلب</h4>
+                                        <p>إبقاؤك على علم بمكان طلبك منذ لحظة استلامه حتى تسليمه لك.</p>
+                                    </div>
+                                </div>
+                                <div class="about-feature-item">
+                                    <div class="item-icon"><i class="fa-solid fa-business-time"></i></div>
+                                    <div class="item-text">
+                                        <h4>التزام تام بالمواعيد</h4>
+                                        <p>الدقة في المواعيد هي الأساس في كافة خدمات التوصيل التي أقدمها.</p>
+                                    </div>
+                                </div>
+                                <div class="about-feature-item">
+                                    <div class="item-icon"><i class="fa-solid fa-mobile-retro"></i></div>
+                                    <div class="item-text">
+                                        <h4>تواصل مباشر وسريع</h4>
+                                        <p>بدون وسطاء، تتواصل معي مباشرة عبر الهاتف أو الواتساب لتأفيذ طلبك فوراً.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 3: SERVICES -->
+        <section id="services-page" class="page-section">
+            <div class="page-header">
+                <div class="container">
+                    <h1>خدماتي</h1>
+                    <p>حلول توصيل متكاملة وسريعة تلبي كافة احتياجاتك اليومية داخل تاجوراء</p>
+                </div>
+            </div>
+
+            <div class="section-padding">
+                <div class="container">
+                    <div class="grid-3">
+
+                        <!-- Service 1 -->
+                        <div class="service-card reveal">
+                            <div class="service-icon"><i class="fa-solid fa-utensils"></i></div>
+                            <h3>توصيل طلبات المطاعم</h3>
+                            <p>نقل وتوصيل مختلف الوجبات والأطعمة من المطاعم والمقاهي مع الحفاظ على درجة حرارتها وجودتها.</p>
+                        </div>
+
+                        <!-- Service 2 -->
+                        <div class="service-card reveal">
+                            <div class="service-icon"><i class="fa-solid fa-motorcycle"></i></div>
+                            <h3>توصيل سريع بالدراجة</h3>
+                            <p>استغلال مرونة وسرعة الدراجة النارية لتفادي الاختناقات المرورية والوصول بأسرع وقت ممكن.</p>
+                        </div>
+
+                        <!-- Service 3 -->
+                        <div class="service-card reveal">
+                            <div class="service-icon"><i class="fa-solid fa-box-open"></i></div>
+                            <h3>توصيل المشاوير والطرود الصغيرة</h3>
+                            <p>نقل الأغراض الشخصية، المستندات، الطرود الخفيفة، والمشاوير الخاصة داخل النطاق بكل أمان.</p>
+                        </div>
+
+                        <!-- Service 4 -->
+                        <div class="service-card reveal">
+                            <div class="service-icon"><i class="fa-solid fa-calendar-days"></i></div>
+                            <h3>التوصيل لفترتين يومياً</h3>
+                            <p>مرونة عالية للعمل في أوقات الغداء والعشاء عبر فترتين (1:00 ظهراً - 6:00 مساءً) و (8:00 مساءً - 12:30 ليلاً).</p>
+                        </div>
+
+                        <!-- Service 5 -->
+                        <div class="service-card reveal">
+                            <div class="service-icon"><i class="fa-solid fa-map-location"></i></div>
+                            <h3>تغطية كاملة لتاجوراء</h3>
+                            <p>معرفة دقيقة وشاملة بكافة أحياء وشوارع ومعالم تاجوراء لضمان التوصيل للعنوان المكتوب بدقة.</p>
+                        </div>
+
+                        <!-- Service 6 -->
+                        <div class="service-card reveal">
+                            <div class="service-icon"><i class="fa-solid fa-bell"></i></div>
+                            <h3>متابعة الطلب لحظة بلحظة</h3>
+                            <p>تحديثات مباشرة ومستمرة حالة استلام الطلب والانطلاق للعميل لضمان التنسيق التام.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 4: COVERAGE & HOURS -->
+        <section id="coverage-page" class="page-section">
+            <div class="page-header">
+                <div class="container">
+                    <h1>التغطية وأوقات العمل</h1>
+                    <p>أين أعمل ومتى يمكنك طلب الخدمة داخل مدينة تاجوراء</p>
+                </div>
+            </div>
+
+            <div class="section-padding">
+                <div class="container">
+                    <div class="coverage-grid">
+
+                        <div class="coverage-info-card reveal">
+                            <div class="info-card-header">
+                                <i class="fa-solid fa-clock"></i>
+                                <h3>أوقات العمل اليومية</h3>
+                            </div>
+                            <div class="shift-box">
+                                <div class="shift-title"><i class="fa-solid fa-sun"></i> الفترة الأولى (الظهيرة)</div>
+                                <div class="shift-time">من الساعة 1:00 ظهراً حتى 6:00 مساءً</div>
+                            </div>
+                            <div class="shift-box">
+                                <div class="shift-title"><i class="fa-solid fa-moon"></i> الفترة الثانية (المسائية)</div>
+                                <div class="shift-time">من الساعة 8:00 مساءً حتى 12:30 ليلاً</div>
+                            </div>
+                            <div class="shift-note">
+                                <i class="fa-solid fa-circle-info"></i> يمكن تحديد مواعيد خاصة مسبقاً بالتنسيق المباشر عبر واتساب.
+                            </div>
+                        </div>
+
+                        <div class="coverage-map-card reveal">
+                            <div class="info-card-header">
+                                <i class="fa-solid fa-map-pin"></i>
+                                <h3>نطاق التغطية الجغرافية</h3>
+                            </div>
+                            <p>تغطي خدمتي مدينة تاجوراء بالكامل بكافة شوارعها ومناطقها ومحلاتها السكنية والتجارية، ومن بينها:</p>
+
+                            <ul class="coverage-list">
+                                <li><i class="fa-solid fa-location-dot"></i> تاجوراء الوسط / السوق</li>
+                                <li><i class="fa-solid fa-location-dot"></i> طريق الشاطئ وشارع المزرعة</li>
+                                <li><i class="fa-solid fa-location-dot"></i> منطقة الضحي والنشيع</li>
+                                <li><i class="fa-solid fa-location-dot"></i> منطقة أبي سليم تاجوراء وغوط الرمان</li>
+                                <li><i class="fa-solid fa-location-dot"></i> جميع الأحياء والشوارع المجاورة في تاجوراء</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 5: CONTACT -->
+        <section id="contact-page" class="page-section">
+            <div class="page-header">
+                <div class="container">
+                    <h1>تواصل معي</h1>
+                    <p>أنا جاهز دائماً لاستلام طلباتك واستفساراتك، اختر الوسيلة المناسبة لك</p>
+                </div>
+            </div>
+
+            <div class="section-padding">
+                <div class="container">
+                    <div class="grid-3">
+
+                        <!-- Contact 1: Whatsapp -->
+                        <div class="contact-card reveal">
+                            <div class="contact-icon whatsapp-bg"><i class="fa-brands fa-whatsapp"></i></div>
+                            <h3>واتساب (WhatsApp)</h3>
+                            <p>أسرع طريقة لإرسال تفاصيل طلبك والموقع المباشر.</p>
+                            <a href="https://wa.me/218944752936" target="_blank" class="btn btn-whatsapp w-full">
+                                <i class="fa-brands fa-whatsapp"></i> مراسلة عبر الواتساب
+                            </a>
+                        </div>
+
+                        <!-- Contact 2: Phone Call -->
+                        <div class="contact-card reveal">
+                            <div class="contact-icon phone-bg"><i class="fa-solid fa-phone"></i></div>
+                            <h3>اتصال مباشر</h3>
+                            <p>للتواصل الهاتفي السريع والمباشر وحجز التوصيل.</p>
+                            <a href="tel:+218917111419" class="btn btn-phone w-full">
+                                <i class="fa-solid fa-phone"></i> اتصال هاتفياً
+                            </a>
+                        </div>
+
+                        <!-- Contact 3: Instagram -->
+                        <div class="contact-card reveal">
+                            <div class="contact-icon instagram-bg"><i class="fa-brands fa-instagram"></i></div>
+                            <h3>إنستغرام (Instagram)</h3>
+                            <p>تابع الحساب الرسمي على إنستغرام لمتابعة الأنشطة.</p>
+                            <a href="https://www.instagram.com/anaas_al999" target="_blank" class="btn btn-instagram w-full">
+                                <i class="fa-brands fa-instagram"></i> زيارة الحساب
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Whatsapp Button -->
+    <a href="https://wa.me/218944752936" target="_blank" class="floating-whatsapp" aria-label="تواصل معنا عبر واتساب">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="tooltip">اطلب الآن عبر واتساب</span>
+    </a>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>عبد الحفيظ النعاس</h3>
+                    <p>خدمة توصيل طلبات المطاعم والمشاوير بالدراجة النارية - تاجوراء، ليبيا.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home" class="nav-link-btn" data-page="home">الرئيسية</a>
+                    <a href="#about" class="nav-link-btn" data-page="about">من أنا</a>
+                    <a href="#services" class="nav-link-btn" data-page="services">الخدمات</a>
+                    <a href="#coverage" class="nav-link-btn" data-page="coverage">التغطية والأوقات</a>
+                    <a href="#contact" class="nav-link-btn" data-page="contact">تواصل معي</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 عبد الحفيظ النعاس. جميع الحقوق محفوظة.</p>
+            </div>
         </div>
-      </div>
-    </section>
+    </footer>
 
-    <!-- التواصل -->
-    <section class="section contact" id="contact">
-      <div class="container">
-        <div class="section-head" data-reveal>
-          <span class="section-tag">تواصل</span>
-          <h2>لنبدأ <span class="gradient-text">رحلتك</span></h2>
-          <p>جائع؟ أنا هنا. تواصل معي الآن وسأكون عندك في دقائق.</p>
-        </div>
-
-        <div class="contact-grid" data-reveal>
-          <div class="contact-card whatsapp-card">
-            <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
-            <h3>واتساب</h3>
-            <p>أسرع طريقة للتواصل. أرسل طلبك وسأجيب فوراً.</p>
-            <a href="https://wa.me/218944752936" target="_blank" rel="noopener" class="btn btn-primary">
-              <i class="fa-brands fa-whatsapp"></i>
-              راسلني على واتساب
-            </a>
-          </div>
-
-          <div class="contact-card phone-card">
-            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
-            <h3>اتصال مباشر</h3>
-            <p>للطلبات العاجلة أو الاستفسار، اتصل بي مباشرة.</p>
-            <a href="tel:+218917111419" class="btn btn-secondary">
-              <i class="fa-solid fa-phone"></i>
-              اتصل الآن
-            </a>
-          </div>
-
-          <div class="contact-card social-card">
-            <div class="contact-icon"><i class="fa-brands fa-instagram"></i></div>
-            <h3>تابعني</h3>
-            <p>شاهد رحلات التوصيل وعروض اليوم عبر إنستغرام.</p>
-            <a href="https://www.instagram.com/anaas_al999" target="_blank" rel="noopener" class="btn btn-ghost">
-              <i class="fa-brands fa-instagram"></i>
-              @anaas_al999
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- الفوتر -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <div class="logo">
-            <span class="logo-mark"><i class="fa-solid fa-motorcycle"></i></span>
-            <span class="logo-text">عبد الحفيظ النعاس</span>
-          </div>
-          <p>خدمة توصيل سريعة وموثوقة<br/>من مطعمي المرجان وجباليا في تاجوراء</p>
-        </div>
-
-        <div class="footer-links">
-          <h4>روابط سريعة</h4>
-          <ul>
-            <li><a href="#home">الرئيسية</a></li>
-            <li><a href="#about">من أنا</a></li>
-            <li><a href="#services">الخدمات</a></li>
-            <li><a href="#restaurants">المطاعم</a></li>
-            <li><a href="#contact">تواصل</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-contact">
-          <h4>التواصل</h4>
-          <ul>
-            <li><i class="fa-brands fa-whatsapp"></i> 094-4752936</li>
-            <li><i class="fa-solid fa-phone"></i> 091-7111419</li>
-            <li><i class="fa-solid fa-location-dot"></i> تاجوراء - ليبيا</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 عبد الحفيظ النعاس. جميع الحقوق محفوظة.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <!-- Script JS -->
+    <script src="script.js"></script>
 </body>
-  </html>
+</html>
